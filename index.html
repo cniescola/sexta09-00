@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro Produtos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header class="container-fluid card">
         <nav class="container p-3">
@@ -31,26 +34,26 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label class="form-label">Digite o nome do produto:</label>
-                                <input type="text" class="form-control" id="valor1"">
+                                <input type="text" class="form-control" id="nomeProd">
                             </div>
                             <div class="col">
                                 <label class="form-label">Digite o codigo do produto:</label>
-                                <input type="text" class="form-control" id="valor2">
+                                <input type="text" class="form-control" id="codProd">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
                                 <label for="" class="form-label">Digite a descrição do produto:</label>
-                                <textarea class="form-control" rows="7"></textarea>
+                                <textarea class="form-control" rows="7" id="descProd"></textarea>
                             </div>
                             <div class="col d-flex flex-column justify-content-between">
                                 <div>
                                     <label class="form-label">Preço do produto:</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" class="form-control" id="precoProd">
                                 </div>
                                 <div>
-                                    <button class="btn btn-success w-100" id="botao">Salvar</button>
+                                    <button class="btn btn-success w-100" id="salvar">Salvar</button>
                                 </div>
                                 <div>
                                     <button class="btn btn-danger w-100">Apagar</button>
@@ -61,15 +64,15 @@
                     <div class="col-4 d-flex flex-column justify-content-between">
                         <div class="card p-4">
                             <label class="form-label">Digite o Link:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="link">
                         </div>
                         <div class="card p-4">
                             <label class="form-label">Quantidade possivel de parcelas:</label>
-                            <input type="number" max="12" min="1" class="form-control">
+                            <input type="number" max="12" min="1" class="form-control" id="parcela">
                         </div>
                         <div class="card p-4">
                             <label class="form-label">Digite o porcentagem de lucro:</label>
-                            <input type="number" class="form-control">
+                            <input type="number" class="form-control" id="porcentagemLucro">
                         </div>
                     </div>
                 </div>
@@ -85,20 +88,55 @@
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
-        <script type="text/javascript">
 
-        document.querySelector("#botao").addEventListener("click",function(){
-            var valor1 = BigInt(document.querySelector("#valor1").value);
-            var valor2 = BigInt(document.querySelector("#valor2").value);
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-            var resultado = valor1 + valor2
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 
-            console.log(resultado);
+    <script type="text/javascript">
+
+        $("#salvar").click(function(){
+            var nomeProd = $("#nomeProd").val();
+            var codProd = $("#codProd").val();
+            var descProd = $("#descProd").val();
+            var link = $("#link").val();
+            var parcela = $("#parcela").val();
+            var porcentagemLucro = $("#porcentagemLucro").val();
+            var descProd = $("#descProd").val();
+
+            console.log(nomeProd+" "+codProd+" "+descProd+" "+link+" "+parcela+" "+porcentagemLucro+" "+descProd)
+
         })
 
-    </script>
 
+
+
+
+
+
+        // document.querySelector('#salvar').addEventListener("click", function () {
+        //     var nomeProd = document.querySelector("#nomeProd").value;
+        //     var codProd = document.querySelector('#codProd').value;
+        //     var descProd = document.querySelector("#descProd").value;
+        //     var link = document.querySelector("#link").value;
+        //     var parcela= BigInt(document.querySelector("#parcela").value);
+        //     var porcentagemLucro = BigInt(document.querySelector("#porcentagemLucro").value);
+        //     var descProd = document.querySelector("#descProd").value;
+
+        //     console.log(nomeProd);
+        //     console.log(codProd);
+        //     console.log(descProd);
+        //     console.log(link);
+        //     console.log(parcela);
+        //     console.log(porcentagemLucro);
+        //     console.log(descProd);
+        // });
+
+
+
+    </script>
 </body>
+
 </html>
