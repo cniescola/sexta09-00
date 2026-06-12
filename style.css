@@ -1,0 +1,17 @@
+.btn-hover:hover{
+    opacity: 65%;
+    cursor:pointer;
+}
+section{
+    height: 100%;
+}
+main{
+    height: 95vh;
+}
+.superior{
+    height: 40%;
+}
+
+.inferior{
+    height: 60%;
+}
