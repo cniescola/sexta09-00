@@ -1,0 +1,20 @@
+.btn-hover:hover{
+    opacity: 70%;
+    cursor:pointer;
+}
+main{
+    height:95vh;
+}
+section{
+    height: 100%;
+}
+.superior{
+    height: 40%;
+}
+.inferior{
+    height: 60%;
+}
+
+.escrita{
+    font-family: sans-serif;
+}
