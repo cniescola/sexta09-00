@@ -1,3 +1,18 @@
-.card{
-    box-shadow: 5px 5px 5px #00000038;
+.btn-hover:hover{
+opacity: 50%;
+cursor:pointer;
+}
+section{
+    height: 100%;
+}
+main{
+    height:100vh;
+}
+.superior{
+
+    height:40%;
+}
+.inferior{
+
+    height:60%;
 }
