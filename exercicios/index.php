@@ -21,12 +21,23 @@
 
     <main class="container-fluid p-0">
         <section class="d-flex flex-column">
-            <div class="superior w-100 p-5" style="background-color: #f5f5f5">
-                <div class="row">
-                    <div class="col">
-                        <div class="btn-hover">< Anterior</div>
-                        <div class="escrita">Para anunciar mais rápido, procure seu produto em nosso catalógo</div>
+            <div class="superior w-100 p-3" style="background-color: #f5f5f5">
+                <div class="btn-hover container">< Anterior</div>
+                <div class="container mt-5 text-secondary">Etapa 1 de 2</div>
+                <div class="container mt-2"><h2>Para anunciar mais rápido,</h2></div>
+                <div class="container"><h2>procure seu produto em nosso catalógo</h2></div> 
+
+                <div class="container card mt-5">
+                    <div class="row mt-4">
+                        <label class="form-label"> Digite o nome do produto:</label>
+                        <input type="text" class="form-control width"></input>
                     </div>
+                    <div class="col dir">
+                        <button class="btn btn-success">Confimar</button>
+                    </div>
+
+
+
                 </div>
             </div>
 
@@ -37,4 +48,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
-</html>
+</html> 
