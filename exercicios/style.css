@@ -23,8 +23,26 @@ section{
 .card{
     box-shadow: 3px 5px 16px #00000028;
     border:none;
+    width: 55%;
+    height: 100%;
 }
 
 .width{
     width: 30%
+}
+
+#botao{
+    border-radius: 10%;
+    background-color: white;
+    border-color: greenyellow;
+    color: black;
+    font-family: sans-serif;
+}
+
+#botao2{
+    border-radius: 5%;
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: sans-serif;
 }

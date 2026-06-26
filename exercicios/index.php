@@ -26,23 +26,22 @@
                 <div class="container mt-5 text-secondary">Etapa 1 de 2</div>
                 <div class="container mt-2"><h2>Para anunciar mais rápido,</h2></div>
                 <div class="container"><h2>procure seu produto em nosso catalógo</h2></div> 
-
+                
                 <div class="container card mt-5">
-                    <div class="row mt-4">
-                        <label class="form-label"> Digite o nome do produto:</label>
-                        <input type="text" class="form-control width"></input>
+                    <div class="row h-100">
+                        <div class="col mt-4">
+                            <label class="form-label"> Digite o nome do produto:</label>
+                            <input type="text" class="form-control width"></input>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-end">
+                            <button id="botao2" class="btn btn-danger">Cancelar</button>
+                            <button id="botao" class="btn btn-success">Confimar</button>
+                        </div>
                     </div>
-                    <div class="col dir">
-                        <button class="btn btn-success">Confimar</button>
-                    </div>
-
-
-
                 </div>
             </div>
 
-            <div class="inferior w-100" style="background-color: #ededed">
-            </div>
+            <div class="inferior w-100" style="background-color: #ededed"></div>
         </section>
     </main>
 
