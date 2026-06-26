@@ -19,8 +19,34 @@ main{
 #imgfoda{
     width: 200px;
 }
+#imgfoda2{
+    position:absolute;
+    top: 100px;
+    right:500px
+    
+}
 #InputFoda{
-width: 250px;
+    
+    border-style: none;
+    border-bottom:3px solid cornflowerblue;
+}
+#botao{
+    border-radius: 5%;
+    border-color:cornflowerblue;
+    background-color:white;
+    color:cornflowerblue;
 
+}
+#botao2{
+    background-color:white;
+    color:cornflowerblue;
+    border-style: none;
+}
+.card{
+    height: 280px;
+
+}
+.row{
+    height:100%;
 
 }

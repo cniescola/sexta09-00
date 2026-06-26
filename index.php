@@ -12,7 +12,7 @@
 
 <body>
 
-  <header class="container-fluid d-flex justify-content-between align-items-center" style="background-color:#fff159">
+  <header class="container-fluid d-flex justify-content-between align-items-center p-1" style="background-color:#fff159">
     <a href="#"><img src="logo.png" id="imgfoda" class="logo"></a>
     <div class="btn-hover">Cadastro Produto</div>
     <div class="row">
@@ -34,19 +34,23 @@
           <h1> Para Concluir,</h1>
         </div>
         <div class="container">
-          <h1> Faça coisas Fodas</h1>
+          <h1> Vamos definir as condiçoes fodas</h1>
+          <a><img src="download.jpg" id="imgfoda2" class=""></a>
         </div>
         <div class="container mt-5 card">
           <div class="row">
             <div class="col">
-            <h6 class="mt-4">Qual e o Preço?</h6>
-            <input class="mt-4" id="InputFoda" placeholder="R$">
+              <h6 class="mt-4">Qual e o Preço?</h6>
+              <div id="caixavermelhahorrorosa" class="row">
+                <div class="col-4"><input class="" id="InputFoda" placeholder="R$"></div>
+              </div>
             </div>
-            <div class="col">
-            <input type="button" class="btn btn-success" value="Enviar">
-          </div>
+            <div class="col d-flex align-items-end">
+              <input id="botao2" type="button" class="btn btn-success ms-5 mb-4" value="Cancelar">
+              <input id="botao" type="button" class="btn btn-success ms-5 mb-4" value="Confirmar">
             </div>
           </div>
+        </div>
       </div>
       <div class="inferior" style="background-color:#ededed"></div>
 
