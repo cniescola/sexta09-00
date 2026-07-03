@@ -31,26 +31,41 @@
           <h6> Epata 2 de 2</h6>
         </div>
         <div class="container mt-1">
-          <h1> Para Conculi,</h1>
+          <h1> Pa anuncia os bagui,</h1>
         </div>
         <div class="container">
-          <h1> Vamus defini as condiçoes foda</h1>
+          <h1> pocrure seu podruto no cagatologo</h1>
         </div>
-        <div class="container mt-5 card">
+        <div class="container mt-5 card d-flex align-items-center">
           <div class="row">
-            <div class="col">
-              <h6 class="mt-4">Quau e o Peçro?</h6>
-              <div id="caixavermelhahorrorosa" class="row">
-                <div class="col-4"><input class="" id="InputFoda" placeholder="R$"></div>
+            <div class="col-4">
+              <div id="Caixa1" class="card d-flex align-items-center">
+                <i id="lupagulosa" class="bi bi-search"></i>
+                <h6 id="palavrachave">Por Palavras-chave<h6>
               </div>
             </div>
-            <div class="col d-flex align-items-end">
-              <input id="botao2" type="button" class="btn btn-success ms-5 mb-4" value="Cancela">
-              <input id="botao" type="button" class="btn btn-success ms-5 mb-4" value="Confirima">
+            <div class="col-4">
+              <div id="Caixa1" class="card d-flex align-items-center">
+                <i id="lupagulosa" class="bi bi-camera"></i>
+                <h6 id="palavrachave">Por Foto<h6>
+              </div>
+            </div>
+            <div class="col-4">
+              <div id="Caixa1" class="card d-flex align-items-center">
+                <i id="lupagulosa" class="bi bi-upc"></i>
+                <h6 id="palavrachave">Por Codigo<h6>
+              </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+          <h6>Escreva o nome da marca, o modelo e outras caracteristicas do produto</h6>
+          <input id="inputfodalistico" placeholder="Ex:Celular Samsung Galaxy A56 5G 256gb 8gb Ram Cinza"></input>
+          </div>
         </div>
-      </div>
+        <div class="col d-flex align-items-end">
+              <input id="botao67" type="button" class="btn btn-success mb-4" value="Buscar">
+        </div>
       <div class="inferior" style="background-color:#ededed"></div>
 
     </section>

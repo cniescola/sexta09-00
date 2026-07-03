@@ -37,16 +37,42 @@ main{
     color:cornflowerblue;
 
 }
+
 #botao2{
     background-color:white;
     color:cornflowerblue;
     border-style: none;
 }
+
 .card{
     height: 280px;
 
 }
 .row{
     height:100%;
+
+}
+#Caixa1{
+    width: 150px;
+    height:80px;
+}
+#Caixa1:hover{
+    border-color: cornflowerblue;
+}
+#lupagulosa{
+    font-size: 25px;
+}
+#Caixa1:hover #palavrachave{
+    color: cornflowerblue;
+}
+#Caixa1:hover #lupagulosa{
+    color: cornflowerblue;
+}
+#inputfodalistico{
+    width: 900px;
+
+}
+#botao67{
+    background-color:cornflowerblue;
 
 }
