@@ -1,0 +1,558 @@
+/* =====================================================================================
+   ESTILO CUSTOMIZADO - CLONE MERCADO LIVRE
+   Este arquivo CSS complementa o framework Bootstrap 5, customizando cores, espaçamentos
+   e efeitos visuais para replicar com precisão a identidade do Mercado Livre.
+   Cada seletor está devidamente comentado para fins didáticos.
+   ===================================================================================== */
+
+/* 
+   [REGRA]: Importação da Fonte Roboto do Google Fonts.
+   Substitui a fonte padrão do sistema por uma fonte moderna, limpa e altamente legível,
+   similar à fonte 'Proxima Nova' utilizada pelo Mercado Livre.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* 
+   [SELETOR]: body
+   Define os estilos aplicados a toda a página.
+   - font-family: Aplica a fonte Roboto como padrão, com alternativas sem serifa.
+   - background-color: Define o cinza claro característico do Mercado Livre (#ebebeb) para o fundo.
+   - color: Define um tom de cinza escuro (#333) para que os textos não sejam totalmente pretos, melhorando o conforto visual.
+   - margin/padding: Zerados por segurança para evitar margens indesejadas nas bordas da janela.
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+   [SELETOR]: .ml-header
+   Customiza a barra de navegação superior (Header).
+   - background-color: Aplica a clássica cor amarela do Mercado Livre (#fff159).
+   - border-bottom: Adiciona uma linha sutil cinza sob a barra.
+   - padding: Define o espaçamento interno superior e inferior de 12px (0.75rem).
+*/
+.ml-header {
+    background-color: #fff159;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.75rem 0;
+}
+
+/* 
+   [SELETOR]: .ml-logo
+   Estiliza a imagem do logotipo para manter as proporções adequadas no cabeçalho.
+   - height: Define a altura máxima de 45 pixels para evitar distorções do layout.
+*/
+.ml-logo {
+    height: 45px;
+}
+
+/* 
+   [SELETOR]: .ml-nav-link
+   Estiliza as ligações de navegação do topo.
+   - color: Cor cinza escuro.
+   - font-size: Tamanho reduzido (14px) para visual mais limpo.
+   - text-decoration: Remove o sublinhado padrão dos links.
+*/
+.ml-nav-link {
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 
+   [SELETOR]: .ml-nav-link:hover
+   Define o visual quando o mouse passa por cima do link de navegação.
+   - color: Altera a cor para o azul padrão (#3483fa) ao passar o mouse.
+*/
+.ml-nav-link:hover {
+    color: #3483fa;
+}
+
+/* 
+   [SELETOR]: .step-indicator
+   Estiliza o texto de progresso (ex: "Etapa 1 de 3").
+   - font-size: Letra menor (12px) e sutil.
+   - color: Cinza médio (#666) para dar menos destaque que o título principal.
+   - font-weight: Peso médio (500) para destacar ligeiramente.
+*/
+.step-indicator {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 
+   [SELETOR]: .back-link
+   Estiliza o link "< Anterior".
+   - color: Azul oficial do Mercado Livre (#3483fa).
+   - font-weight: Peso semi-negrito (500) para melhor visibilidade.
+   - transition: Transição suave de 0.2 segundos para efeito hover.
+*/
+.back-link {
+    color: #3483fa;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+/* 
+   [SELETOR]: .back-link:hover
+   - text-decoration: Adiciona sublinhado ao passar o mouse, indicando que é clicável.
+*/
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* 
+   [SELETOR]: .ml-title
+   Estiliza o título principal da página.
+   - font-size: Tamanho destacado de 32px (2rem).
+   - font-weight: Negrito forte (700) para criar hierarquia visual.
+   - line-height: Altura de linha de 1.2 para evitar espaçamento excessivo em quebras.
+*/
+.ml-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333333;
+}
+
+/* 
+   [SELETOR]: .ml-card
+   Estiliza o container branco central (Card) que abriga as opções.
+   - background-color: Fundo totalmente branco (#ffffff).
+   - border-radius: Cantos ligeiramente arredondados (6px), fiel ao Mercado Livre.
+   - border: Borda fina cinza claro (#e6e6e6).
+   - box-shadow: Sombra muito suave para dar profundidade (efeito de elevação).
+*/
+.ml-card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+/* 
+   [SELETOR]: .category-card
+   Estiliza as caixas de seleção de categoria (Tela 1).
+   - border: Borda cinza padrão.
+   - border-radius: 6px.
+   - transition: Animação suave para hover e click.
+   - cursor: Cursor de mãozinha indicando que o elemento é clicável.
+*/
+.category-card {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    display: block;
+    color: #333333;
+}
+
+/* 
+   [SELETOR]: .category-card:hover
+   Efeito visual ao passar o mouse sobre o card de categoria.
+   - transform: Eleva ligeiramente o card para cima (-4px), gerando dinamismo.
+   - box-shadow: Aumenta a sombra projetada, simulando que o card flutua.
+   - border-color: Destaca a borda mudando para o azul do Mercado Livre.
+*/
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    border-color: #3483fa;
+    color: #3483fa;
+}
+
+/* 
+   [SELETOR]: .category-icon
+   Estiliza os ícones dentro dos cards de categoria.
+   - width/height: Tamanho fixo de 64px para padronizar as imagens.
+   - margin-bottom: Espaço de 15px entre o ícone e o texto abaixo.
+*/
+.category-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+/* 
+   [SELETOR]: .tab-btn
+   Estiliza as abas de busca (Por palavras-chave, Por foto, Por código).
+   - background/border: Transparentes para parecer apenas um botão de texto plano.
+   - padding: Ajusta o espaçamento interno.
+   - font-size/font-weight: Define tamanho médio e peso.
+*/
+.tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* 
+   [SELETOR]: .tab-btn.active
+   Estiliza a aba que está atualmente selecionada.
+   - border-bottom: Adiciona uma barra inferior azul contínua de 2px de espessura.
+   - color: Altera a cor do texto para azul para indicar ativação.
+*/
+.tab-btn.active {
+    border-bottom: 2px solid #3483fa;
+    color: #3483fa;
+}
+
+/* 
+   [SELETOR]: .badge-novo
+   Estiliza o balão informativo "NOVO" nas abas.
+   - background-color: Azul escuro (#3483fa) ou verde. Usamos o azul de destaque do ML.
+   - font-size: Letra muito pequena (10px).
+   - padding: Pequeno preenchimento para arredondar.
+   - border-radius: Cantos arredondados de formato pílula (3px).
+*/
+.badge-novo {
+    background-color: #3483fa;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* 
+   [SELETOR]: .ml-input-group
+   Cria um container de entrada estilizado.
+   - border: Borda fina cinza.
+   - border-radius: 6px.
+   - transition: Transição suave de cor de borda.
+*/
+.ml-input-group {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 
+   [SELETOR]: .ml-input-group:focus-within
+   Aplica estilos ao container quando o input dentro dele recebe foco.
+   - border-color: Borda muda para o azul do Mercado Livre.
+   - box-shadow: Aplica um leve anel azul de seleção (fiel à interface moderna).
+*/
+.ml-input-group:focus-within {
+    border-color: #3483fa;
+    box-shadow: 0 0 0 1px #3483fa;
+}
+
+/* 
+   [SELETOR]: .ml-input
+   Estiliza o campo de texto real dentro do grupo de input.
+   - border: Removida, pois a borda é simulada pelo container pai (.ml-input-group).
+   - outline: Removido para desativar a borda azul padrão do navegador.
+   - padding: Preenchimento confortável de 15px.
+   - font-size: Tamanho de texto legível de 16px.
+*/
+.ml-input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+    border-radius: 6px;
+}
+
+/* 
+   [SELETOR]: .btn-ml-primary
+   Estiliza o botão azul primário (ex: "Buscar", "Confirmar").
+   - background-color: Azul característico do Mercado Livre (#3483fa).
+   - border: Sem borda extra.
+   - color: Texto branco (#ffffff).
+   - border-radius: 6px para harmonizar com os inputs.
+   - padding: Espaçamento confortável de 12px de altura por 32px de largura.
+   - font-weight: Peso 500 para robustez no texto.
+   - transition: Efeito de hover suave.
+*/
+.btn-ml-primary {
+    background-color: #3483fa;
+    border: none;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* 
+   [SELETOR]: .btn-ml-primary:hover
+   - background-color: Escurece levemente o azul ao passar o mouse para dar feedback tátil.
+*/
+.btn-ml-primary:hover {
+    background-color: #1e6ed9;
+    color: #ffffff;
+}
+
+/* 
+   [SELETOR]: .btn-ml-secondary
+   Estiliza o botão secundário azul claro (ex: "Não é o que eu vendo").
+   - background-color: Azul translúcido ou muito claro (#e3edfb).
+   - color: Texto azul padrão (#3483fa).
+   - border-radius: 6px.
+   - padding: Idêntico ao botão primário.
+   - transition: Hover suave.
+*/
+.btn-ml-secondary {
+    background-color: #e3edfb;
+    border: none;
+    color: #3483fa;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* 
+   [SELETOR]: .btn-ml-secondary:hover
+   - background-color: Escurece levemente o azul claro para dar feedback.
+*/
+.btn-ml-secondary:hover {
+    background-color: #c9defb;
+    color: #3483fa;
+}
+
+/* 
+   [SELETOR]: .thumbnail-gallery
+   Estiliza a coluna com as imagens em miniatura na galeria do produto (Tela 3).
+   - display: flex com flex-direction column para empilhar verticalmente.
+   - gap: 10px de espaçamento entre cada miniatura.
+*/
+.thumbnail-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 
+   [SELETOR]: .thumb-item
+   Estiliza cada miniatura de imagem individualmente.
+   - width/height: Tamanho menor quadrado (50px por 50px).
+   - border: Borda cinza clara padrão.
+   - border-radius: 4px.
+   - cursor: Mãozinha clicável.
+   - object-fit: cover impede distorções cortando a imagem para preencher o quadrado.
+*/
+.thumb-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 2px;
+    transition: border-color 0.2s ease;
+}
+
+/* 
+   [SELETOR]: .thumb-item.active, .thumb-item:hover
+   Destaca a miniatura atualmente selecionada ou focada pelo mouse.
+   - border-color: Destaca a borda mudando para o azul do Mercado Livre.
+   - border-width: Aumenta para 2px de espessura.
+*/
+.thumb-item.active, .thumb-item:hover {
+    border-color: #3483fa;
+    border-width: 2px;
+}
+
+/* 
+   [SELETOR]: .main-image-container
+   Contém a foto principal ampliada do produto na página de confirmação.
+   - border: Borda fina sutil.
+   - border-radius: 6px.
+   - min-height: Altura mínima para manter uniformidade no layout da galeria.
+*/
+.main-image-container {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+/* 
+   [SELETOR]: .main-image-container img
+   Garante a responsividade da imagem principal.
+   - max-height: Impede que passe de 310px de altura.
+   - max-width: Ocupa no máximo 100% da largura do box.
+   - object-fit: contain mantém toda a proporção original do produto visível.
+*/
+.main-image-container img {
+    max-height: 310px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* 
+   [SELETOR]: .variation-btn
+   Estiliza os botões de seleção de variação (como Voltagem: 127V / 220V).
+   - border: Borda sutil de 1px cinza escuro.
+   - border-radius: 4px.
+   - background-color: Fundo branco.
+   - padding: Ajuste confortável (8px de altura por 20px de largura).
+   - font-size: Tamanho de fonte médio de 14px.
+*/
+.variation-btn {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 
+   [SELETOR]: .variation-btn.active
+   Aplica destaque ao botão de variação ativo/selecionado pelo aluno.
+   - border: Altera para 2px de espessura na cor azul do Mercado Livre.
+   - padding: Ajusta o padding para 7px por 19px para manter as proporções físicas idênticas (compensa o ganho de borda).
+*/
+.variation-btn.active {
+    border: 2px solid #3483fa;
+    padding: 7px 19px;
+}
+
+/* 
+   [SELETOR]: .ml-product-list-card
+   Estiliza os itens da lista de produtos cadastrados (Tela 5).
+   - background-color: Fundo branco.
+   - border-bottom: Linha divisória fina cinza entre anúncios.
+   - padding: Espaçamento interno de 20px.
+   - transition: Hover suave de fundo.
+*/
+.ml-product-list-card {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+/* 
+   [SELETOR]: .ml-product-list-card:hover
+   - background-color: Altera ligeiramente para cinza muito claro (#f9f9f9) ao focar.
+*/
+.ml-product-list-card:hover {
+    background-color: #f9f9f9;
+}
+
+/* 
+   [SELETOR]: .ml-badge-success
+   Estiliza pequenos badges informativos de sucesso ou status ativo.
+   - background-color: Verde Mercado Livre (#00a650) em tom translúcido.
+   - color: Texto verde escuro.
+   - font-size: Tamanho de letra de 12px.
+   - padding: Margens compactas em volta do texto.
+   - border-radius: Cantos arredondados (4px).
+*/
+.ml-badge-success {
+    background-color: rgba(0, 166, 80, 0.1);
+    color: #00a650;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* 
+   [SELETOR]: .ml-price
+   Estiliza a exibição de preços.
+   - font-size: Letra grande e legível de 24px.
+   - font-weight: Peso regular (400) com destaque.
+*/
+.ml-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+/* 
+   [SELETOR]: .ml-price-cents
+   Estiliza os centavos de forma elevada (superscript), como no Mercado Livre original.
+   - font-size: Metade do tamanho do preço principal (12px).
+   - vertical-align: Alinha no topo do texto.
+*/
+.ml-price-cents {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+/* 
+   [SELETOR]: .ml-footer
+   Customiza o rodapé institucional no fim das páginas.
+   - background-color: Fundo branco.
+   - border-top: Linha sutil separadora.
+   - padding: Espaçamento de 30px superior/inferior.
+   - font-size: Tamanho pequeno (12px) para textos de copyright e termos.
+   - color: Cinza médio (#999).
+*/
+.ml-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    padding: 30px 0;
+    font-size: 12px;
+    color: #999999;
+}
+
+/* 
+   [SELETOR]: .ml-footer a
+   - color: Links secundários em cinza médio, sem sublinhado.
+*/
+.ml-footer a {
+    color: #999999;
+    text-decoration: none;
+}
+
+/* 
+   [SELETOR]: .ml-footer a:hover
+   - color: Muda para cinza escuro e sublinha ao passar o mouse.
+*/
+.ml-footer a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
