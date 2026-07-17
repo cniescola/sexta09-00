@@ -25,5 +25,50 @@
 }
 
 main{
+    background-color: #ebebeb;
     min-height: calc(100vh - 200px);
+}
+
+.ml-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333333;
+}
+
+.category-card{
+    border:1px solid #e6e6e6;
+    padding:30px 15px;
+    border-radius:6px;
+    text-align:center;
+    background-color: #fff;
+    cursor:pointer;
+    display: block;
+    color:#333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    border-color: #3483fa;
+    color: #3483fa;
+}
+
+#icones{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 95%;
+    background-color: #aef7f7;
+    width: 100px;
+    height: 100px;
+}
+
+#corfonte{
+    color:#6c757d;   
+}
+
+#corfonte2{
+    font-size: smaller;
+    color:#6c757d;
 }
