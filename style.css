@@ -1,17 +1,27 @@
-.btn-hover:hover{
-    opacity: 65%;
-    cursor:pointer;
-}
-section{
-    height: 100%;
-}
-main{
-    height: 95vh;
-}
-.superior{
-    height: 40%;
-}
-
-.inferior{
-    height: 60%;
-}
+    body {
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .calculator {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 16px;
+    }
+    .display {
+      background-color: #212529;
+      color: #ffffff;
+      font-size: 2.2rem;
+      border-radius: 10px;
+      min-height: 70px;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .btn-calc {
+      font-size: 1.25rem;
+      font-weight: 500;
+      padding: 15px 0;
+      border-radius: 10px;
+    }
