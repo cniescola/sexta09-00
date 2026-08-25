@@ -81,5 +81,30 @@
     </div>
   </div>
 
+
+  <script type="text/javascript">
+
+    var repete = document.querySelectorAll('.btn-calc');
+    var number = "";
+    var operador;
+    
+    repete.forEach(function(botoe){
+        botoe.addEventListener("click", function(){
+            var texto = this.textContent.trim();
+           
+            if(number == '+' || number == '-' || number == '*' || number == "/"){
+                operador = number;
+            }else{
+                 number = number + "" + texto;
+            }
+            
+            console.log(number);
+
+        });
+    });
+
+  </script>
+
+
 </body>
 </html>
