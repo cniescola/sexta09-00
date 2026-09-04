@@ -12,7 +12,7 @@
 
   <div class="calculator card shadow-lg p-3 bg-white">
     <!-- Display / Telinha de Resultado -->
-    <div class="display d-flex align-items-center justify-content-end px-3 mb-3 text-end">
+    <div class="display d-flex align-items-center justify-content-end px-3 mb-3 text-end result">
       0
     </div>
 
@@ -20,7 +20,7 @@
     <div class="row g-2">
       <!-- Linha 1: Limpar e Operações básicas -->
       <div class="col-6">
-        <button class="btn btn-outline-danger w-100 btn-calc">C</button>
+        <button class="btn btn-outline-danger w-100 btn-calc btn-c">C</button>
       </div>
       <div class="col-3">
         <button class="btn btn-light text-primary fw-bold w-100 btn-calc">÷</button>
@@ -31,13 +31,13 @@
 
       <!-- Linha 2 -->
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">7</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">7</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">8</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">8</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">9</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">9</button>
       </div>
       <div class="col-3">
         <button class="btn btn-light text-primary fw-bold w-100 btn-calc">−</button>
@@ -45,13 +45,13 @@
 
       <!-- Linha 3 -->
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">4</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">4</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">5</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">5</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">6</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">6</button>
       </div>
       <div class="col-3">
         <button class="btn btn-light text-primary fw-bold w-100 btn-calc">+</button>
@@ -59,24 +59,24 @@
 
       <!-- Linha 4 -->
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">1</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">1</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">2</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">2</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">3</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">3</button>
       </div>
       <div class="col-3 rowspan-2">
-        <button class="btn btn-primary w-100 btn-calc h-100">=</button>
+        <button class="btn btn-primary w-100 btn-calc h-100 btn-result">=</button>
       </div>
 
       <!-- Linha 5 -->
       <div class="col-6">
-        <button class="btn btn-light w-100 btn-calc">0</button>
+        <button class="btn btn-light w-100 btn-calc btn-num">0</button>
       </div>
       <div class="col-3">
-        <button class="btn btn-light w-100 btn-calc">,</button>
+        <button class="btn btn-light w-100 btn-calc btn-vir">,</button>
       </div>
     </div>
   </div>
@@ -84,24 +84,40 @@
 
   <script type="text/javascript">
 
-    var repete = document.querySelectorAll('.btn-calc');
-    var number = "";
-    var operador;
-    
-    repete.forEach(function(botoe){
-        botoe.addEventListener("click", function(){
-            var texto = this.textContent.trim();
-           
-            if(number == '+' || number == '-' || number == '*' || number == "/"){
-                operador = number;
-            }else{
-                 number = number + "" + texto;
-            }
-            
-            console.log(number);
+    var valor1 = 0;
+    var valor2 = 0;
+    var acress = "";
 
-        });
+
+    var press = document.querySelectorAll(".btn-num");
+
+    press.forEach(function(pres){
+      pres.addEventListener('click', function(){
+      var val = pres.textContent;
+      acress = acress+""+val;
+
+      var result = document.querySelector(".result");
+      result.textContent = acress;
+      valor1 = acress;  
+      });
     });
+
+    var pressgeral = document.querySelectorAll(".btn-calc");
+
+    pressgeral.forEach(function (pres){
+      pres.addEventListener('click', function(){
+        var r_press = pres.textContent;
+        
+        if(r_press == '+' || r_press == '-' || r_press == '/' || r_press == '*'){
+          console.log("teste");
+          if(valor1 != 0){
+            var result = document.querySelector(".result");
+            acress = acress+""+r_press;
+            result.textContent = acress; 
+          }
+        }
+      })
+    })
 
   </script>
 
